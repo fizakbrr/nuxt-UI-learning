@@ -1,0 +1,18 @@
+{
+  "slug": "about",
+  "title": "About",
+  "seo": {
+    "description": "Why this project exists and how the content is put together."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "About this project",
+      "description": "A learning exercise for Nuxt 4, Nuxt UI, and file-based content."
+    },
+    {
+      "type": "richtext",
+      "body": "<p>This site pulls from two places. Pages like this one are JSON files under <code>content/</code>, served through a Nitro route. Articles come from <a href=\"https://dummyjson.com\" target=\"_blank\" rel=\"noopener\">DummyJSON</a>, a public demo API, proxied through the same server so the frontend never talks to it directly.</p><p>Two ideas are on purpose: fetching is always <code>useFetch</code> against <code>/api/*</code>, never a direct import of content into a component, and this page itself is not a hardcoded route. It exists because <code>content/pages/about.json</code> exists; delete the file and the page is gone, add a new one and a new page appears at that slug, resolved by a single catch-all route.</p>"
+    }
+  ]
+}

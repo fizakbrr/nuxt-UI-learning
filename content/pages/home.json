@@ -1,0 +1,36 @@
+{
+  "slug": "home",
+  "title": "Nuxt UI Learning",
+  "seo": {
+    "description": "A small file-based CMS built with Nuxt 4, Nuxt UI, and useFetch."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "Learn Nuxt 4 the practical way",
+      "description": "A frontend-only site where every page reads its content through useFetch, and a catch-all route resolves whatever URL you throw at it.",
+      "links": [
+        { "label": "Browse articles", "to": "/articles", "icon": "i-lucide-arrow-right" },
+        { "label": "About this project", "to": "/about" }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "What this project demonstrates",
+      "items": [
+        {
+          "title": "useFetch everywhere",
+          "description": "Every page reads data through useFetch against a small Nitro API, no direct storage access from components."
+        },
+        {
+          "title": "Catch-all routing",
+          "description": "[...slug].vue resolves any CMS page on the fly and falls through to a real 404 for the rest."
+        },
+        {
+          "title": "Two content sources, one contract",
+          "description": "Site pages are local JSON files; articles come from DummyJSON, a public API. Both get validated with zod before a component ever sees them."
+        }
+      ]
+    }
+  ]
+}

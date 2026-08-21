@@ -1,0 +1,18 @@
+{
+  "slug": "contact",
+  "title": "Contact",
+  "seo": {
+    "description": "How to reach the author of this project."
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "Get in touch",
+      "description": "No contact form here, there's no backend to send it to. Reach out directly instead.",
+      "links": [
+        { "label": "Email", "to": "mailto:hello@example.com", "icon": "i-lucide-mail" },
+        { "label": "GitHub", "to": "https://github.com/fizakbrr", "icon": "i-lucide-github" }
+      ]
+    }
+  ]
+}
